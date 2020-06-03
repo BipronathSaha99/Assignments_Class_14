@@ -1,0 +1,10 @@
+# >>>---- ----Area of Triangle--------------------<<<
+from math import sqrt
+def area(a,b,c):
+    s=(a+b+c)/2
+    area=sqrt(s*(s-a)*(s-b)*(s-c))
+    return (f"Area= {area:0.2f}")
+a=float(input("Side_1="))
+b=float(input("Side_2="))
+c=float(input("Side_3="))
+print(area(a,b,c))
