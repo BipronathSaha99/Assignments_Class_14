@@ -1,0 +1,5 @@
+def conversation(d):
+    result=d*0.621
+    return(f"Result = {result:0.2f}")
+d=float(input("Enter d="))
+print(conversation(d))
