@@ -1,0 +1,18 @@
+# >>----------Fibbonachi-----------<<
+
+
+def fibo(num):
+    if num<0:
+        print("Invalid input....")
+        #1st fibonacci number 
+    elif num==0:
+        return 0
+        #2nd fibonacchi number
+    elif num==1:
+         return 1
+    else:
+        res_fib=fibo(num-1)+fibo(num-2)
+        return res_fib
+#driver code
+num=int(input("n:"))
+print(fibo(num))
