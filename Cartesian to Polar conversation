@@ -1,0 +1,13 @@
+# >>-----------------------------Convert Cartesian Cordinates to Polar Cordinates----------------------------<<
+import math
+#input
+x,y=input().split()
+x=int(x)
+y=int(y)
+#logic: x=rcos(theta) y=rsin(theta)
+r=math.sqrt(x**2+y**2)
+theta=math.atan(x/y)
+theta_rad=(180/math.pi)*theta
+#output
+print("r={:0.2f} theta={:0.4f}".format(r,theta))
+
